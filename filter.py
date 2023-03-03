@@ -56,7 +56,7 @@ def derivative_ydirection(file_path, window):
     window.destroy()
     image = cv.imread(file_path)
     image_y = cv.Sobel(image, cv.CV_64F, 0, 1, ksize=3)
-    cv.imshow("Derivative of image in x direction", image_y)
+    cv.imshow("Derivative of image in y direction", image_y)
     if cv.waitKey(0):
         continue_window()
 
